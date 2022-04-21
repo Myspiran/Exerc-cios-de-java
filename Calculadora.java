@@ -12,7 +12,7 @@ public class Calculadora {
 		
 		while(true) {		
 			
-			System.out.println("Digite 1 para somar, 2 para subtrair, 3 para dividir, 4 para fechar");
+			System.out.println("Digite 1 para somar, 2 para subtrair, 3 para mutiplicar, 4 para dividir e 5 para fechar");
 			cal = sc.nextInt();
 			
 			System.out.println("Digite o primeiro valor");
