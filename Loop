@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Loop {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = 1;
+		int res = 0;
+		
+		System.out.println("Digite o valor de N");
+		n = sc.nextInt();
+		
+		System.out.println("0 para continuar, 1 para o valor ao quadradro e 2 para o valor ao cubo");
+		res = sc.nextInt();
+		
+		if(n > 0) {
+			for(int i = 1; i <= n; i++) {
+				if(res == 0) {
+					System.out.println(i);
+				}
+				else if(res == 1) {
+					System.out.println(i * i);
+				}
+				else if(res == 2) {
+					System.out.println(i * i * i);
+				}
+				else if(n == 0) {
+					break;
+				}
+			}
+		}
+		else if(n < 0) {
+			System.out.println("\"N\" negativo");
+		}
+		
+		
+		sc.close();
+	}
+	
+}
